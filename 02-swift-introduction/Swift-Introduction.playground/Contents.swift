@@ -62,7 +62,7 @@ var pi: Float = 3.14
 // pi = someMinusNumber
 
 // Arithmetic Operators
-var area = 15 * 20
+var mul = 15 * 20
 
 var sum = 5 + 6
 
@@ -85,6 +85,55 @@ if randomNumber % 2 == 0 {
 }
 
 var result2 = 15 * ((5 + 7) / 3)
+
+
+// ***************************************** //
+// Functions
+
+//Shape 1
+var length = 5
+var width = 10
+
+var area = length * width
+
+//Shape 2
+var length2 = 6
+var width2 = 12
+
+var area2 = length2 * width2
+
+//Shape 3
+var length3 = 3
+var width3 = 8
+
+var area3 = length3 * width3
+
+func calculateArea(length: Int, width: Int) -> Int{
+    return length * width
+}
+
+// call the function and store the results into 3 constants
+let shape1 = calculateArea(length: 1, width: 2)
+let shape2 = calculateArea(length: 12, width: 3)
+let shape3 = calculateArea(length: 11, width: 5)
+
+var myBankAccountBalance = 500.00
+var iLikeThoseShoes = 350.00
+
+// inout is used to pass the reference of the variable instead just the value
+func purchaseItem(currentBalance: inout Double, itemPrice: Double){
+    if itemPrice <= currentBalance{
+        currentBalance = currentBalance - itemPrice
+        print("Purchased item for: $\(itemPrice)")
+    }else{
+        print("Loser!")
+    }
+}
+
+purchaseItem(currentBalance: &myBankAccountBalance, itemPrice: iLikeThoseShoes)
+
+var newTShirt = 40.00
+purchaseItem(currentBalance: &myBankAccountBalance, itemPrice: newTShirt)
 
 
 
