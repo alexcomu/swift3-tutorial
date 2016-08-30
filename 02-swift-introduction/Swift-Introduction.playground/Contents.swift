@@ -53,4 +53,39 @@ if sentence.contains("hell") || sentence.contains("crazy"){
 
 // ***************************************** //
 // Numbers
+var myAge: Int = 27 // this is an integer!
+var someDoubleNumber: Double = 789789987878979878977897 // this is too big to be an integer!
+var someMinusNumber = -56.45 // this is a double
+var pi: Float = 3.14
+
+// this is not allowed! Float = Double --> WRONG!
+// pi = someMinusNumber
+
+// Arithmetic Operators
+var area = 15 * 20
+
+var sum = 5 + 6
+
+var diff = 10 - 3
+
+var div = 12 / 3
+
+var div1 = 13 / 5
+
+var remainder = 13 % 5
+
+var result = "The result of 13 / 5 is \(div1) with a remainder of \(remainder)"
+
+var randomNumber = 12
+
+if randomNumber % 2 == 0 {
+    print("this is an even number") // print out to the console
+} else {
+    print("this is an odd number")
+}
+
+var result2 = 15 * ((5 + 7) / 3)
+
+
+
 
