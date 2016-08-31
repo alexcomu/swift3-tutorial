@@ -200,6 +200,77 @@ students2.append("Pippo")
 print(students2)
 
 
+// ***************************************** //
+// Loops
 
+var salaries: [Double] = [10, 12, 15, 20, 5]
+print(salaries)
+var index = 0
+// While statement
+repeat{
+    salaries[index] = salaries[index] + (salaries[index] * 0.10)
+    index += 1
+}while(index < salaries.count)
+print(salaries)
+
+// For statement
+for i in 0..<salaries.count{
+    salaries[i] = salaries[i] + (salaries[i] * 0.10)
+}
+print(salaries)
+
+// For each statement
+for salary in salaries {
+    print("Salary: \(salary)")
+}
+
+
+// ***************************************** //
+// Dictionaries
+
+var myDictionary = [String: Any]()
+myDictionary["firstname"] = "Alex"
+myDictionary["lastname"] = "Comu"
+myDictionary["age"] = 27
+
+print("My Dictionary has \(myDictionary.count) items")
+
+// clear the dictionary
+myDictionary = [:]
+print(myDictionary)
+
+if myDictionary.isEmpty {
+    print("Empty Dictionary")
+}else{
+    print("WTF")
+}
+
+// null value
+myDictionary["firstname"] = nil
+
+myDictionary["firstname"] = "Alex"
+myDictionary["lastname"] = "Comu"
+myDictionary["age"] = 27
+
+for (key, value) in myDictionary {
+    print("Key: \(key) with value: \(value)")
+}
+
+
+for key in myDictionary.keys{
+    print("Key: \(key)")
+}
+
+for value in myDictionary.values{
+    print("Key: \(value)")
+}
+
+var info = [String: Array<[String: Int]>]()
+
+info["random"] = [["alex": 1]]
+
+for (key, value) in info {
+    print("Key: \(key) value: \(value)")
+}
 
 
