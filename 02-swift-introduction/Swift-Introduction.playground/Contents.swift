@@ -135,6 +135,71 @@ purchaseItem(currentBalance: &myBankAccountBalance, itemPrice: iLikeThoseShoes)
 var newTShirt = 40.00
 purchaseItem(currentBalance: &myBankAccountBalance, itemPrice: newTShirt)
 
+// ***************************************** //
+// Bools / conditionals / compare Operators
+
+var isThisFileUseful = true
+isThisFileUseful = false
+
+if true == false || false == false{
+    print("WTF...")
+}
+
+var isLoadingFinished: Bool = false
+if !isLoadingFinished{
+    print("Loading...")
+}
+
+var randomCost = 50
+if randomCost > 100{
+    print("WOW")
+} else if randomCost == 50{
+    print("I'm here")
+}else{
+    print("No way...")
+}
+
+
+// ***************************************** //
+// Logical Operators
+
+let amIAllowed = false
+let butIHaveTheCode = true
+if !amIAllowed{
+    print("Not Allowed!")
+}
+if amIAllowed || butIHaveTheCode{
+    print("I'm in!")
+}else{
+    print("Stay out")
+}
+
+
+// ***************************************** //
+// Arrays
+
+var peopleSalary: Array<Int> = [25000, 22000, 123] // array of integers
+var randomArray: [Any] = ["asd", 123, true] // array of ANY types
+randomArray.append(true)
+
+print(peopleSalary.count)
+peopleSalary.append(1)
+print(peopleSalary.count)
+
+
+peopleSalary.remove(at: 0)
+print(peopleSalary)
+
+var students = [String]() // create an empty array of type string -> Initialize
+var students2: [String]   // this is just the declaration
+students.append("Alex")
+print(students)
+//students2.append("ALEX") // ERROR, you need to create an instance before use it
+students2 = [String]()
+students2.append("Pippo")
+print(students2)
+
+
 
 
 
