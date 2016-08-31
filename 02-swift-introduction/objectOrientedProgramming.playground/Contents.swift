@@ -32,4 +32,39 @@ func changeAgeFromObject(person: Person, age: Int){
 changeAgeFromObject(person: alex, age: 30)
 print(alex.fullname)
 
+// ****************************************** //
+// Inheritance
+
+class Sport{
+    var name = "basic name"
+    
+    init(){
+        print("I'm sport class")
+    }
+    
+    func someRandomFunc(){
+        
+    }
+}
+
+class Football: Sport{
+    // override the init class to change the name
+    override init(){
+        super.init() // call my father init method
+        print("I'm football class")
+        name = "football"
+    }
+    // adding new vars
+    var teams = [String]()
+    
+    override func someRandomFunc() {
+        print("Do something different..")
+    }
+}
+
+var football = Football()
+
+
+
+
 
