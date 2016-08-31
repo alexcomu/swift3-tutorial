@@ -65,6 +65,58 @@ class Football: Sport{
 var football = Football()
 
 
+// ****************************************** //
+// Polymorphism
+
+/*
+ // bad way
+ class Rectangle{
+    var area: Double?
+    
+    func calculateArea(length: Double, width: Double){
+        area = length * width
+    }
+ }
+
+ class Triangle{
+    var area: Double?
+    
+    func calculateArea(base: Double, height: Double){
+        area = base * height / 2
+    }
+ }
+*/
+
+// this is the good way
+
+class Shape{
+    var area: Double?
+    
+    func calculateArea(valA: Double, valB: Double){
+        // do nothing
+    }
+}
+
+class Triangle: Shape{
+    override func calculateArea(valA: Double, valB: Double) {
+        area = (valA * valB) / 2
+    }
+}
+
+class Rectangle: Shape{
+    override func calculateArea(valA: Double, valB: Double) {
+        area = (valA * valB)
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
