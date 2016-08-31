@@ -274,3 +274,70 @@ for (key, value) in info {
 }
 
 
+
+// ***************************************** //
+// Optionals
+// I don't know if I have a value... so I'll use optionals!
+
+var optionalVariable: Int?   // check this value!
+//print(optionalVariable!)     // '!' is used to retrieve the value, in this case this is a crash! Because the value at the moment is nil!
+optionalVariable = 500
+print(optionalVariable!)        // BTW this is bad!
+
+var lotteryWinnings: Int?
+if lotteryWinnings != nil {     // this garantee that we have a value
+    print(lotteryWinnings!)
+}
+
+// Preferred way -> Create a constant and assign the value
+// if let
+if let winnings = lotteryWinnings{
+    print(winnings)
+}
+
+// Optionals example with Class (sorry if I'm using class.. see later for more information about classes)
+// create class Person
+class Person{
+    // class has a string called name
+    var name: String?
+}
+// create a var alex that is a Person
+var alex: Person?
+// print the name value --> nil
+print(alex?.name)
+//Create an Instance the alex Person
+alex = Person()
+// set the value of the name
+alex?.name = "Alex"
+// now we can print the value using the 'if let' way!
+if let a = alex, let n = a.name{
+    print(n)
+}
+
+
+// Other Example
+
+class Man{
+    private var _age: Int!
+    
+    var age: Int{
+        if _age == nil{
+            _age = 0
+        }
+        return _age
+    }
+    
+    func setAge(newAge: Int) {
+        self._age = newAge
+    }
+}
+
+var comu = Man()
+print(comu.age)
+comu.setAge(newAge: 27)
+print(comu.age)
+
+
+
+
+
