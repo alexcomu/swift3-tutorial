@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miraclePillEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="EyX-w8-B9D">
@@ -24,17 +25,70 @@
                                     <constraint firstAttribute="height" constant="100" id="Pw5-Jj-Aqe"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIRACLE PILLS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gl4-2h-9TT">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="t0n-lK-l3q"/>
+                                    <constraint firstAttribute="height" constant="21" id="vYP-U5-bDd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.10588235294117647" green="0.10588235294117647" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$150" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gj6-08-xfP">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9dq-hj-etZ"/>
+                                    <constraint firstAttribute="width" constant="42" id="c26-Gy-eZa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.1058823529" green="0.1058823529" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FULL NAME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufd-id-GPM">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="eLp-AD-fuq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.1058823529" green="0.1058823529" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7h-99-sgl" userLabel="Divider">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="JD7-EB-2Nb"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uY2-mL-Ysk">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1Zb-WU-ZOd"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="uY2-mL-Ysk" firstAttribute="trailing" secondItem="Ufd-id-GPM" secondAttribute="trailing" id="AD0-yC-YMy"/>
+                            <constraint firstItem="S7h-99-sgl" firstAttribute="top" secondItem="gj6-08-xfP" secondAttribute="bottom" constant="10" id="AcL-hd-MNI"/>
+                            <constraint firstItem="gj6-08-xfP" firstAttribute="top" secondItem="gl4-2h-9TT" secondAttribute="bottom" constant="10" id="H1T-sw-0Tg"/>
+                            <constraint firstItem="uY2-mL-Ysk" firstAttribute="leading" secondItem="Ufd-id-GPM" secondAttribute="leading" id="KcO-nt-3ce"/>
                             <constraint firstItem="EyX-w8-B9D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UGW-yT-aVR"/>
                             <constraint firstItem="EyX-w8-B9D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="VHK-Mh-DpN"/>
+                            <constraint firstItem="uY2-mL-Ysk" firstAttribute="top" secondItem="Ufd-id-GPM" secondAttribute="bottom" constant="8" id="Yf2-o3-Fl3"/>
+                            <constraint firstItem="S7h-99-sgl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="aHl-7y-mi6"/>
+                            <constraint firstItem="gl4-2h-9TT" firstAttribute="centerX" secondItem="EyX-w8-B9D" secondAttribute="centerX" id="gAs-wH-QIK"/>
+                            <constraint firstItem="gl4-2h-9TT" firstAttribute="top" secondItem="EyX-w8-B9D" secondAttribute="bottom" constant="25" id="hPL-oT-2rr"/>
+                            <constraint firstItem="gj6-08-xfP" firstAttribute="centerX" secondItem="gl4-2h-9TT" secondAttribute="centerX" id="ihn-5M-Kt6"/>
+                            <constraint firstItem="Ufd-id-GPM" firstAttribute="top" secondItem="S7h-99-sgl" secondAttribute="bottom" constant="8" id="oVL-KN-XjB"/>
+                            <constraint firstItem="Ufd-id-GPM" firstAttribute="leading" secondItem="S7h-99-sgl" secondAttribute="leading" id="s6y-TG-WNN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S7h-99-sgl" secondAttribute="trailing" constant="20" id="spU-KC-WxJ"/>
+                            <constraint firstItem="Ufd-id-GPM" firstAttribute="trailing" secondItem="S7h-99-sgl" secondAttribute="trailing" id="uau-PP-P4T"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="133.59999999999999" y="138.0809595202399"/>
         </scene>
     </scenes>
     <resources>
