@@ -163,8 +163,11 @@
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybU-3b-WLC" userLabel="successView">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="successIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="Hto-nr-rlx">
-                                        <frame key="frameInset" minX="67" minY="269" width="240" height="128"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="successIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="Hto-nr-rlx">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="2Uf-8k-v8g"/>
+                                            <constraint firstAttribute="height" constant="128" id="Rxa-2R-3rK"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
