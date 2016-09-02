@@ -30,6 +30,7 @@ class ViewController: UIViewController {
     var rightValStr = ""
     var result = ""
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -57,6 +58,13 @@ class ViewController: UIViewController {
             btnSound.stop()
         }
         btnSound.play()
+    }
+    
+    @IBAction func onClearButton(_ sender: AnyObject) {
+        currentOperation = Operation.Empty
+        runningNumber = "0"
+        resultLabel.text = "0"
+        result = "0"
     }
     
     @IBAction func onDividePressed(sender: AnyObject){

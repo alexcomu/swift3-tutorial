@@ -215,7 +215,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ie-A9-Ez0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ie-A9-Ez0">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="229" id="BxH-c1-13s"/>
                                     <constraint firstAttribute="height" constant="21" id="UfE-Zw-VhV"/>
@@ -224,6 +224,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BC0-9c-Yge" userLabel="ClearButton">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="Nq0-E4-skE"/>
+                                    <constraint firstAttribute="height" constant="35" id="Xwd-fE-C8U"/>
+                                </constraints>
+                                <state key="normal" image="clear"/>
+                                <connections>
+                                    <action selector="onClearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GzD-mh-Bdg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -236,6 +246,8 @@
                             <constraint firstItem="6ie-A9-Ez0" firstAttribute="centerY" secondItem="kB9-m3-aUq" secondAttribute="centerY" id="FFn-KK-JD1"/>
                             <constraint firstAttribute="trailing" secondItem="knf-Fq-MOi" secondAttribute="trailing" id="HYZ-xl-3z7"/>
                             <constraint firstItem="6ie-A9-Ez0" firstAttribute="centerX" secondItem="kB9-m3-aUq" secondAttribute="centerX" id="Hml-IV-QpQ"/>
+                            <constraint firstItem="BC0-9c-Yge" firstAttribute="leading" secondItem="O87-NT-BaL" secondAttribute="leading" id="ISX-T8-g9h"/>
+                            <constraint firstItem="BC0-9c-Yge" firstAttribute="centerY" secondItem="6ie-A9-Ez0" secondAttribute="centerY" id="Omm-p9-3Wi"/>
                             <constraint firstItem="oYA-mZ-yFI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PDL-Ce-5VD"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="knf-Fq-MOi" secondAttribute="bottom" id="imU-9q-yut"/>
                             <constraint firstItem="g89-jn-y0u" firstAttribute="centerY" secondItem="O87-NT-BaL" secondAttribute="centerY" id="jl8-MJ-Njx"/>
@@ -266,6 +278,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
