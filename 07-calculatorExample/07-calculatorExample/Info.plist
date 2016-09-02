@@ -41,5 +41,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Minecrafter.Alt.ttf</string>
+		<string>Minecrafter.Reg.ttf</string>
+	</array>
 </dict>
 </plist>
