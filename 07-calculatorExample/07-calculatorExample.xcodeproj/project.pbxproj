@@ -14,6 +14,7 @@
 		65AFB4D41D79773A0037A434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65AFB4D21D79773A0037A434 /* LaunchScreen.storyboard */; };
 		65AFB4DD1D798CC80037A434 /* Minecrafter.Alt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65AFB4DB1D798C9C0037A434 /* Minecrafter.Alt.ttf */; };
 		65AFB4DE1D798CC80037A434 /* Minecrafter.Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65AFB4DC1D798C9C0037A434 /* Minecrafter.Reg.ttf */; };
+		65AFB4E01D798D790037A434 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 65AFB4DF1D798D790037A434 /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		65AFB4D51D79773A0037A434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65AFB4DB1D798C9C0037A434 /* Minecrafter.Alt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecrafter.Alt.ttf; sourceTree = "<group>"; };
 		65AFB4DC1D798C9C0037A434 /* Minecrafter.Reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecrafter.Reg.ttf; sourceTree = "<group>"; };
+		65AFB4DF1D798D790037A434 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +60,11 @@
 		65AFB4C81D79773A0037A434 /* 07-calculatorExample */ = {
 			isa = PBXGroup;
 			children = (
+				65AFB4DF1D798D790037A434 /* btn.wav */,
 				65AFB4DB1D798C9C0037A434 /* Minecrafter.Alt.ttf */,
-				65AFB4DC1D798C9C0037A434 /* Minecrafter.Reg.ttf */,
 				65AFB4C91D79773A0037A434 /* AppDelegate.swift */,
 				65AFB4CB1D79773A0037A434 /* ViewController.swift */,
+				65AFB4DC1D798C9C0037A434 /* Minecrafter.Reg.ttf */,
 				65AFB4CD1D79773A0037A434 /* Main.storyboard */,
 				65AFB4D01D79773A0037A434 /* Assets.xcassets */,
 				65AFB4D21D79773A0037A434 /* LaunchScreen.storyboard */,
@@ -133,6 +136,7 @@
 				65AFB4DD1D798CC80037A434 /* Minecrafter.Alt.ttf in Resources */,
 				65AFB4DE1D798CC80037A434 /* Minecrafter.Reg.ttf in Resources */,
 				65AFB4D41D79773A0037A434 /* LaunchScreen.storyboard in Resources */,
+				65AFB4E01D798D790037A434 /* btn.wav in Resources */,
 				65AFB4D11D79773A0037A434 /* Assets.xcassets in Resources */,
 				65AFB4CF1D79773A0037A434 /* Main.storyboard in Resources */,
 			);
