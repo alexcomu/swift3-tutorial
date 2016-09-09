@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -46,17 +47,33 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4GE-dS-fNo">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="107" id="pbl-vu-yvB">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                            </constraint>
+                                        </constraints>
+                                        <state key="normal" title="CLICK ME"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="Em5-vr-Aei" kind="show" id="IQw-sh-Vzo"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.056107677723830074" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="f0h-W7-Ebq" firstAttribute="top" secondItem="QAj-6y-G7u" secondAttribute="top" constant="8" id="ING-yY-avd">
                                         <variation key="heightClass=regular-widthClass=compact" constant="15"/>
                                     </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="4GE-dS-fNo" secondAttribute="trailing" id="bEm-cM-Fzh"/>
                                     <constraint firstItem="f0h-W7-Ebq" firstAttribute="centerX" secondItem="QAj-6y-G7u" secondAttribute="centerX" id="hmm-gN-CHJ"/>
                                     <constraint firstAttribute="height" constant="56" id="kjQ-aH-5DU">
                                         <variation key="heightClass=regular-widthClass=regular" constant="120"/>
                                     </constraint>
                                     <constraint firstItem="dIu-a2-IMR" firstAttribute="top" secondItem="f0h-W7-Ebq" secondAttribute="bottom" constant="8" id="pgb-86-WP4"/>
+                                    <constraint firstItem="4GE-dS-fNo" firstAttribute="centerY" secondItem="f0h-W7-Ebq" secondAttribute="centerY" id="wWW-QN-dbS"/>
                                     <constraint firstItem="dIu-a2-IMR" firstAttribute="centerX" secondItem="QAj-6y-G7u" secondAttribute="centerX" id="yY7-bY-puo"/>
                                 </constraints>
                                 <variation key="default">
@@ -85,7 +102,66 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="134.765625" y="138.36017569546118"/>
+            <point key="canvasLocation" x="133.125" y="137.32394366197184"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="g1K-Ux-Tnv">
+            <objects>
+                <viewController id="Em5-vr-Aei" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bb6-8m-h5o"/>
+                        <viewControllerLayoutGuide type="bottom" id="8rR-OV-mKw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uQ7-PV-tPt">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FdY-Id-57t">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.03742904276491732" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="l28-S5-a1u">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1QG-CZ-4Iv">
+                                <color key="backgroundColor" red="0.047892371651252486" green="0.36805656119268582" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="D68-0U-EEQ">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="130" id="iIr-lR-QRn">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LfD-v7-0RK">
+                                <color key="backgroundColor" red="1" green="0.93843713843794341" blue="0.0207657856866722" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="uG7-J5-MlZ">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="130" id="uXK-dL-I8r">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1QG-CZ-4Iv" firstAttribute="leading" secondItem="uQ7-PV-tPt" secondAttribute="leadingMargin" id="9Rg-sT-EZJ"/>
+                            <constraint firstAttribute="trailing" secondItem="FdY-Id-57t" secondAttribute="trailing" id="Cpi-6C-iLC"/>
+                            <constraint firstItem="FdY-Id-57t" firstAttribute="top" secondItem="uQ7-PV-tPt" secondAttribute="top" id="KIf-Fo-oVH"/>
+                            <constraint firstItem="8rR-OV-mKw" firstAttribute="top" secondItem="LfD-v7-0RK" secondAttribute="bottom" constant="20" id="Tyd-14-s5c"/>
+                            <constraint firstItem="8rR-OV-mKw" firstAttribute="top" secondItem="1QG-CZ-4Iv" secondAttribute="bottom" constant="20" id="cHo-5A-jsC"/>
+                            <constraint firstItem="FdY-Id-57t" firstAttribute="leading" secondItem="uQ7-PV-tPt" secondAttribute="leading" id="odN-UZ-ZW0"/>
+                            <constraint firstItem="LfD-v7-0RK" firstAttribute="trailing" secondItem="uQ7-PV-tPt" secondAttribute="trailingMargin" id="vgO-YD-pAB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="13j-d0-Kli" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830.625" y="137.32394366197184"/>
         </scene>
     </scenes>
 </document>
