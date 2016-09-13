@@ -39,3 +39,8 @@ Simple Calculator made with some old robot style :)
 ## 08-SizeClass-Example
 
 Simple example on how to use SizeClassed to create layouts for differents devices.
+
+## 09-TableViews
+
+Simple example on how to use TableViews and TableViewCells.
+
