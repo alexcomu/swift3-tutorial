@@ -13,6 +13,8 @@
 		653A61D01D882F5500F96028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 653A61CF1D882F5500F96028 /* Assets.xcassets */; };
 		653A61D31D882F5500F96028 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653A61D11D882F5500F96028 /* LaunchScreen.storyboard */; };
 		653A61DE1D88355E00F96028 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653A61DD1D88355E00F96028 /* VideoViewController.swift */; };
+		653A61E01D88365E00F96028 /* PartyCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653A61DF1D88365E00F96028 /* PartyCellTableViewCell.swift */; };
+		653A61E21D88397600F96028 /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653A61E11D88397600F96028 /* PartyRock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		653A61D21D882F5500F96028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		653A61D41D882F5500F96028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		653A61DD1D88355E00F96028 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		653A61DF1D88365E00F96028 /* PartyCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyCellTableViewCell.swift; sourceTree = "<group>"; };
+		653A61E11D88397600F96028 /* PartyRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 		653A61DB1D882FAC00F96028 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				653A61E11D88397600F96028 /* PartyRock.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 		653A61DC1D882FAF00F96028 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				653A61DF1D88365E00F96028 /* PartyCellTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -166,6 +172,8 @@
 			files = (
 				653A61CB1D882F5500F96028 /* MainViewController.swift in Sources */,
 				653A61C91D882F5500F96028 /* AppDelegate.swift in Sources */,
+				653A61E21D88397600F96028 /* PartyRock.swift in Sources */,
+				653A61E01D88365E00F96028 /* PartyCellTableViewCell.swift in Sources */,
 				653A61DE1D88355E00F96028 /* VideoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

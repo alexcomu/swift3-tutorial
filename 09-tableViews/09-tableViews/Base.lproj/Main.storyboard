@@ -10,7 +10,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="_9_tableViews" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -78,7 +78,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="84" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XI7-uH-8id">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="a9j-3R-vJr">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyCell" rowHeight="84" id="a9j-3R-vJr" customClass="PartyCellTableViewCell" customModule="_9_tableViews" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a9j-3R-vJr" id="vEm-CB-cLd">
@@ -109,6 +109,10 @@
                                                 <constraint firstItem="Pg2-Wd-QRD" firstAttribute="centerY" secondItem="vEm-CB-cLd" secondAttribute="centerY" id="vDV-xm-JZn"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoPreviewImage" destination="dUk-1a-BYs" id="W6f-8p-ke0"/>
+                                            <outlet property="videoTitle" destination="Pg2-Wd-QRD" id="mAC-vX-V2D"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -130,6 +134,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="XI7-uH-8id" id="bOF-Oe-fvh"/>
                         <segue destination="apr-WN-Y60" kind="showDetail" identifier="VideoVC" id="ynK-pY-lja"/>
                     </connections>
                 </viewController>
