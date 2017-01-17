@@ -18,11 +18,11 @@ class MainViewController: UIViewController , UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         
         
-        let p1 = PartyRock(imageURL: "http://www.cfau-pd.net/image.php?pic=/images/random-wallpaper/random-wallpaper-6.jpg", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/wZZ7oFKsKzY\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Just a Frog")
+        let p1 = PartyRock(imageURL: "http://www.veterinariovalentini.altervista.org/sites/default/files/cane_13.jpg", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/wZZ7oFKsKzY\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Just a Frog")
         
-        let p2 = PartyRock(imageURL: "http://www.cfau-pd.net/image.php?pic=/images/random-picture/random-picture-4.png", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/wZZ7oFKsKzY\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Ambin Boh Asd Org Pof")
+        let p2 = PartyRock(imageURL: "https://upload.wikimedia.org/wikipedia/commons/7/71/Meet_Truffle!.jpg", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/wZZ7oFKsKzY\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Ambin Boh Asd Org Pof")
         
-        let p3 = PartyRock(imageURL: "http://vignette2.wikia.nocookie.net/potcoplayers/images/0/09/Random_shots_059.jpg/revision/latest?cb=20141130221009", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/wZZ7oFKsKzY\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Qua Qua Qua Prr")
+        let p3 = PartyRock(imageURL: "http://static.ecoo.it/ecoo/fotogallery/625X0/11945/musetto-dolce.jpg", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/wZZ7oFKsKzY\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Qua Qua Qua Prr")
         
         partyRocks.append(p1)
         partyRocks.append(p2)
