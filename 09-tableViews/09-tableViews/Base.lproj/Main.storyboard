@@ -174,14 +174,41 @@
                                     <constraint firstAttribute="height" constant="300" id="9nz-ck-rb2"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1j-FF-sAW">
+                                <rect key="frame" x="16" y="390" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3Tm-0L-iIc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dpc-qm-ppp">
+                                <rect key="frame" x="0.0" y="20" width="375" height="280"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="bMl-On-jWu"/>
+                                </constraints>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="0.86622596153846154" green="0.86622596153846154" blue="0.86622596153846154" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Dpc-qm-ppp" secondAttribute="trailing" id="E4q-eb-gx7"/>
+                            <constraint firstItem="z1j-FF-sAW" firstAttribute="top" secondItem="neI-Y6-BII" secondAttribute="bottom" constant="90" id="HD5-1K-3V4"/>
+                            <constraint firstItem="Dpc-qm-ppp" firstAttribute="top" secondItem="MIk-tW-3hs" secondAttribute="bottom" id="Xw3-fY-mAW"/>
+                            <constraint firstItem="z1j-FF-sAW" firstAttribute="leading" secondItem="om6-5i-dts" secondAttribute="leadingMargin" id="aIO-pn-p5z"/>
                             <constraint firstAttribute="trailing" secondItem="neI-Y6-BII" secondAttribute="trailing" id="hPW-EB-jDA"/>
+                            <constraint firstItem="z1j-FF-sAW" firstAttribute="trailing" secondItem="om6-5i-dts" secondAttribute="trailingMargin" id="p6h-mR-8r5"/>
                             <constraint firstItem="neI-Y6-BII" firstAttribute="leading" secondItem="om6-5i-dts" secondAttribute="leading" id="svO-JS-J05"/>
                             <constraint firstItem="neI-Y6-BII" firstAttribute="top" secondItem="om6-5i-dts" secondAttribute="top" id="t2z-6W-pkS"/>
+                            <constraint firstItem="Dpc-qm-ppp" firstAttribute="top" secondItem="om6-5i-dts" secondAttribute="top" constant="20" id="tuZ-H2-PiH"/>
+                            <constraint firstItem="Dpc-qm-ppp" firstAttribute="leading" secondItem="om6-5i-dts" secondAttribute="leading" id="viq-58-9ag"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="z1j-FF-sAW" id="O8t-6A-Vt6"/>
+                        <outlet property="webView" destination="Dpc-qm-ppp" id="h6T-DD-V7z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MEg-UO-DXO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
