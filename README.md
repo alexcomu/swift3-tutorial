@@ -47,3 +47,7 @@ Simple example on how to use TableViews and TableViewCells.
 ## 10-MVC-Test
 
 Simple exercise using MVC Approach.
+
+## 11-CoreData
+
+How to use CoreData to save persistent data on your phone.
