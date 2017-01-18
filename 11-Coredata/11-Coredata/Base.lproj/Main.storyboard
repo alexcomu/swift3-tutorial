@@ -222,6 +222,9 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Save Item"/>
+                                <connections>
+                                    <action selector="savePressed:" destination="ZfR-ww-f6B" eventType="touchUpInside" id="itx-QA-Yv0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Store" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Lb-NF-n2f">
                                 <rect key="frame" x="94" y="354" width="187" height="21"/>
