@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  mainVC
 //  11-Coredata
 //
 //  Created by Alex Comunian on 17/01/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
