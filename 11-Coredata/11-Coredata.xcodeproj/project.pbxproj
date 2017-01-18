@@ -22,6 +22,7 @@
 		65ACD0FA1E2E844E00FFFF82 /* ItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACD0F21E2E844E00FFFF82 /* ItemType+CoreDataClass.swift */; };
 		65ACD0FB1E2E844E00FFFF82 /* ItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACD0F31E2E844E00FFFF82 /* ItemType+CoreDataProperties.swift */; };
 		65ACD0FE1E2F715A00FFFF82 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACD0FD1E2F715A00FFFF82 /* MaterialView.swift */; };
+		65ACD1001E2F730600FFFF82 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACD0FF1E2F730600FFFF82 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		65ACD0F21E2E844E00FFFF82 /* ItemType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
 		65ACD0F31E2E844E00FFFF82 /* ItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		65ACD0FD1E2F715A00FFFF82 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		65ACD0FF1E2F730600FFFF82 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				65ACD0FD1E2F715A00FFFF82 /* MaterialView.swift */,
+				65ACD0FF1E2F730600FFFF82 /* ItemCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65ACD1001E2F730600FFFF82 /* ItemCell.swift in Sources */,
 				65ACD0F71E2E844E00FFFF82 /* Item+CoreDataProperties.swift in Sources */,
 				65ACD0F61E2E844E00FFFF82 /* Item+CoreDataClass.swift in Sources */,
 				65ACD0FA1E2E844E00FFFF82 /* ItemType+CoreDataClass.swift in Sources */,
