@@ -336,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D8C9915BC2DB51A375FA1BB6 /* Pods-12-webRequest.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8GHFUS3M8K;
 				INFOPLIST_FILE = "12-webRequest/Info.plist";
@@ -351,6 +352,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6CF1A7DC4A37CC4F1CA58EE /* Pods-12-webRequest.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8GHFUS3M8K;
 				INFOPLIST_FILE = "12-webRequest/Info.plist";
@@ -381,6 +383,7 @@
 				65EDE1D31E30DB7400F9E4F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
