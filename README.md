@@ -51,3 +51,14 @@ Simple exercise using MVC Approach.
 ## 11-CoreData
 
 How to use CoreData to save persistent data on your phone.
+
+## 12-WebRequest
+
+REQUIREMENTS: 
+
+    Cocoapods
+
+Just a simple example on how to use APIs with Cocoapods.
+
+
+
