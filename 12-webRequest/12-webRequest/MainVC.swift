@@ -49,6 +49,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                         let forecast = Forecast(weatherDict: obj)
                         self.forecasts.append(forecast)
                     }
+                    self.forecasts.remove(at: 0) // removing Today
+                    self.tableView.reloadData()
                 }
             }
             completed()
@@ -60,12 +62,17 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return forecasts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath)
-        return cell
+        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath) as? WeatherCell{
+            let forecast = forecasts[indexPath.row]
+            cell.configureCell(forecast: forecast)
+            return cell
+        }
+        return WeatherCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -74,7 +81,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func updateMainUI(){
         dateLabel.text = currentWeather.date
-        temperatureLabel.text = "\(currentWeather.currentTemp)"
+        temperatureLabel.text = "\(currentWeather.currentTemp)°"
         cityLabel.text = currentWeather.cityName
         weatherLabel.text = currentWeather.weatherType
         weatherImage.image = UIImage(named: currentWeather.weatherType)

@@ -63,18 +63,11 @@ class CurrentWeather{
                 if let weather = dict["weather"] as? [Dictionary<String, AnyObject>]{
                     if let mainWeather = weather[0]["main"] as? String{
                         self._weatherType = mainWeather.capitalized
-                        print("--")
-                        print(self._weatherType)
                     }
                 }
                 if let main = dict["main"] as? Dictionary<String, AnyObject>{
                     if let currentTemp = main["temp"] as? Double{
-                        // From Calvin to Celsius
-                        //
                         self._currentTemp = Double(round((1000*(currentTemp-273))/1000))
-                        // Double(round(1000*x)/1000)
-                        print("--")
-                        print(self._currentTemp)
                     }
                 }
             }
