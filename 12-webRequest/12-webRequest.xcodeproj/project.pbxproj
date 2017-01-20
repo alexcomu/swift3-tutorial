@@ -17,6 +17,7 @@
 		65EDE1D91E3127DF00F9E4F9 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EDE1D81E3127DF00F9E4F9 /* CurrentWeather.swift */; };
 		65EDE1DB1E321C1400F9E4F9 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EDE1DA1E321C1400F9E4F9 /* Forecast.swift */; };
 		65EDE1DD1E3253B600F9E4F9 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EDE1DC1E3253B600F9E4F9 /* WeatherCell.swift */; };
+		65EDE1E01E32588400F9E4F9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EDE1DF1E32588400F9E4F9 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		65EDE1D81E3127DF00F9E4F9 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		65EDE1DA1E321C1400F9E4F9 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		65EDE1DC1E3253B600F9E4F9 /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		65EDE1DF1E32588400F9E4F9 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		C58FC051E94BD19C7675DF81 /* Pods_12_webRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_12_webRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C9915BC2DB51A375FA1BB6 /* Pods-12-webRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-12-webRequest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-12-webRequest/Pods-12-webRequest.debug.xcconfig"; sourceTree = "<group>"; };
 		E6CF1A7DC4A37CC4F1CA58EE /* Pods-12-webRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-12-webRequest.release.xcconfig"; path = "Pods/Target Support Files/Pods-12-webRequest/Pods-12-webRequest.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				65EDE1D51E31268100F9E4F9 /* Constants.swift */,
 				65EDE1D81E3127DF00F9E4F9 /* CurrentWeather.swift */,
 				65EDE1DA1E321C1400F9E4F9 /* Forecast.swift */,
+				65EDE1DF1E32588400F9E4F9 /* Location.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				65EDE1D91E3127DF00F9E4F9 /* CurrentWeather.swift in Sources */,
 				65EDE1D61E31268100F9E4F9 /* Constants.swift in Sources */,
 				65EDE1DB1E321C1400F9E4F9 /* Forecast.swift in Sources */,
+				65EDE1E01E32588400F9E4F9 /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

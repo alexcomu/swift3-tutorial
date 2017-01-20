@@ -57,8 +57,6 @@ class CurrentWeather{
             if let dict = result.value as? Dictionary<String, AnyObject> {
                 if let name = dict["name"] as? String{
                     self._cityName = name.capitalized
-                    print("--")
-                    print(self._cityName)
                 }
                 if let weather = dict["weather"] as? [Dictionary<String, AnyObject>]{
                     if let mainWeather = weather[0]["main"] as? String{
