@@ -44,14 +44,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="D1U-RR-CjL">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="D1U-RR-CjL" customClass="PokeCell" customModule="_3_pokedex" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="uxj-JU-Kvn">
+                                                <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="uxj-JU-Kvn">
                                                     <rect key="frame" x="0.0" y="0.0" width="105" height="80"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="80" id="CaD-Lx-nN3"/>
@@ -76,6 +76,10 @@
                                             <constraint firstAttribute="bottom" secondItem="X53-h3-O2n" secondAttribute="bottom" id="set-Ea-2Gk"/>
                                             <constraint firstAttribute="trailing" secondItem="uxj-JU-Kvn" secondAttribute="trailing" id="zFz-fM-XLc"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="X53-h3-O2n" id="uRt-l0-Ziv"/>
+                                            <outlet property="thumbImg" destination="uxj-JU-Kvn" id="vW9-vO-vjf"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
