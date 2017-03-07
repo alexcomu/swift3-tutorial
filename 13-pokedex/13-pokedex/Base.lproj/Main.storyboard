@@ -39,7 +39,7 @@
                                         <color key="textColor" red="0.93646241860000001" green="1" blue="0.93732973080000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2s0-Mz-iYP">
+                                    <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2s0-Mz-iYP">
                                         <rect key="frame" x="334" y="25" width="26" height="26"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="26" id="gJi-kh-fPO"/>
@@ -61,7 +61,7 @@
                                     <constraint firstItem="2s0-Mz-iYP" firstAttribute="top" secondItem="hsJ-hj-y62" secondAttribute="top" constant="25" id="X8s-CM-gU5"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="j8P-la-Mok">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="j8P-la-Mok">
                                 <rect key="frame" x="0.0" y="65" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="wBh-Db-v1z"/>
@@ -142,6 +142,7 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="yvW-WP-nFf" id="X4Q-u1-oEy"/>
+                        <outlet property="searchBar" destination="j8P-la-Mok" id="Mel-yK-IDR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
