@@ -61,4 +61,15 @@ REQUIREMENTS:
 Just a simple example on how to use APIs with Cocoapods.
 
 
+## 13-CollectionView Example
 
+A simple exercise with:
+
+* CollectionView
+* Push View
+* API Calls
+* StackViews
+
+REQUIREMENTS:
+
+    Cocoapods
