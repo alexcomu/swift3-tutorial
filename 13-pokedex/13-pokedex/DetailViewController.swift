@@ -51,5 +51,28 @@ class DetailViewController: UIViewController {
         weightLabel.text = pokemon.weight
         nameLabel.text = pokemon.name
         typeLabel.text = pokemon.type
+        descriptionLabel.text = pokemon.description
+        if pokemon.nextEvolutionId == ""{
+            evoLabel.text = "No Evolutions"
+            nextEvoImg.isHidden = true
+        }else{
+            nextEvoImg.isHidden = false
+            nextEvoImg.image = UIImage(named: pokemon.nextEvolutionId)
+            evoLabel.text = "Next Evolution: \(pokemon.nextEvolutionName) - LVL \(pokemon.nextEvolutionLevel)"
+        }
+        
+        
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
