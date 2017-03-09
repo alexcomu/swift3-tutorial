@@ -28,6 +28,12 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let img = UIImage(named: "\(pokemon.pokedexId)")
+        mainImg.image = img
+        currentEvoImg.image = img
+        pokedexLabel.text = "\(pokemon.pokedexId)"
+
+        
         pokemon.downloadPokemonDetail{
             // This code will be call after the network call is complete!
             self.updateUI()
@@ -39,12 +45,11 @@ class DetailViewController: UIViewController {
     }
     
     func updateUI(){
-        print("Update function")
         attackLabel.text = pokemon.attack
         defenseLabel.text = pokemon.defense
         heightLabel.text = pokemon.height
         weightLabel.text = pokemon.weight
-        pokedexLabel.text = "\(pokemon.pokedexId)"
-        
+        nameLabel.text = pokemon.name
+        typeLabel.text = pokemon.type
     }
 }
