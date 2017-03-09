@@ -28,9 +28,23 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        pokemon.downloadPokemonDetail{
+            // This code will be call after the network call is complete!
+            self.updateUI()
+        }
     }
 
     @IBAction func backBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    func updateUI(){
+        print("Update function")
+        attackLabel.text = pokemon.attack
+        defenseLabel.text = pokemon.defense
+        heightLabel.text = pokemon.height
+        weightLabel.text = pokemon.weight
+        pokedexLabel.text = "\(pokemon.pokedexId)"
+        
     }
 }
