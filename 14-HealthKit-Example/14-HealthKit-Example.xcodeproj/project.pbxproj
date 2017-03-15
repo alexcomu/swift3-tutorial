@@ -12,6 +12,7 @@
 		659CF94C1E79857C00F0D317 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659CF94A1E79857C00F0D317 /* Main.storyboard */; };
 		659CF94E1E79857C00F0D317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659CF94D1E79857C00F0D317 /* Assets.xcassets */; };
 		659CF9511E79857C00F0D317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659CF94F1E79857C00F0D317 /* LaunchScreen.storyboard */; };
+		659CF95F1E79867100F0D317 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659CF95E1E79867100F0D317 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		659CF94D1E79857C00F0D317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		659CF9501E79857C00F0D317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		659CF9521E79857C00F0D317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		659CF9581E7985D000F0D317 /* 14-HealthKit-Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "14-HealthKit-Example.entitlements"; sourceTree = "<group>"; };
+		659CF95E1E79867100F0D317 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659CF95F1E79867100F0D317 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +44,7 @@
 			children = (
 				659CF9451E79857C00F0D317 /* 14-HealthKit-Example */,
 				659CF9441E79857C00F0D317 /* Products */,
+				659CF9591E7985D000F0D317 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +59,7 @@
 		659CF9451E79857C00F0D317 /* 14-HealthKit-Example */ = {
 			isa = PBXGroup;
 			children = (
+				659CF9581E7985D000F0D317 /* 14-HealthKit-Example.entitlements */,
 				659CF9461E79857C00F0D317 /* AppDelegate.swift */,
 				659CF9481E79857C00F0D317 /* ViewController.swift */,
 				659CF94A1E79857C00F0D317 /* Main.storyboard */,
@@ -62,6 +68,14 @@
 				659CF9521E79857C00F0D317 /* Info.plist */,
 			);
 			path = "14-HealthKit-Example";
+			sourceTree = "<group>";
+		};
+		659CF9591E7985D000F0D317 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				659CF95E1E79867100F0D317 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +112,11 @@
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 8GHFUS3M8K;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -261,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "14-HealthKit-Example/14-HealthKit-Example.entitlements";
 				DEVELOPMENT_TEAM = 8GHFUS3M8K;
 				INFOPLIST_FILE = "14-HealthKit-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -274,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "14-HealthKit-Example/14-HealthKit-Example.entitlements";
 				DEVELOPMENT_TEAM = 8GHFUS3M8K;
 				INFOPLIST_FILE = "14-HealthKit-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
