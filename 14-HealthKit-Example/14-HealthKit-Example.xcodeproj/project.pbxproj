@@ -13,6 +13,7 @@
 		659CF94E1E79857C00F0D317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659CF94D1E79857C00F0D317 /* Assets.xcassets */; };
 		659CF9511E79857C00F0D317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659CF94F1E79857C00F0D317 /* LaunchScreen.storyboard */; };
 		659CF95F1E79867100F0D317 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659CF95E1E79867100F0D317 /* HealthKit.framework */; };
+		65CACF2C1E7C330E005DB1F2 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CACF2B1E7C330E005DB1F2 /* HealthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		659CF9521E79857C00F0D317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		659CF9581E7985D000F0D317 /* 14-HealthKit-Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "14-HealthKit-Example.entitlements"; sourceTree = "<group>"; };
 		659CF95E1E79867100F0D317 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		65CACF2B1E7C330E005DB1F2 /* HealthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				659CF94D1E79857C00F0D317 /* Assets.xcassets */,
 				659CF94F1E79857C00F0D317 /* LaunchScreen.storyboard */,
 				659CF9521E79857C00F0D317 /* Info.plist */,
+				65CACF2B1E7C330E005DB1F2 /* HealthManager.swift */,
 			);
 			path = "14-HealthKit-Example";
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				659CF9491E79857C00F0D317 /* ViewController.swift in Sources */,
+				65CACF2C1E7C330E005DB1F2 /* HealthManager.swift in Sources */,
 				659CF9471E79857C00F0D317 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +327,7 @@
 				659CF9571E79857C00F0D317 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
