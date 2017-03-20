@@ -74,4 +74,11 @@ REQUIREMENTS:
 
     Cocoapods
 
+## 14-HealhtKit-Example
 
+Singleton example of a usage of HealthKit with Swift 3
+
+
+## 15-Protocol Oriented Programming
+
+Just a collection of Playground.
