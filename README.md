@@ -81,4 +81,4 @@ Singleton example of a usage of HealthKit with Swift 3
 
 ## 15-Protocol Oriented Programming
 
-Just a collection of Playground.
+Just a collection of Playground with a simple *How To* use Protocols in Swift 3.
